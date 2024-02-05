@@ -1,80 +1,59 @@
-# NLP - Roadmap
+# Natural Language Processing - Roadmap
 
-- [NLP - Roadmap](#nlp---roadmap)
-  - [Pre-requisites](#pre-requisites)
-  - [NLP Roadmap](#nlp-roadmap)
-    - [Text Preprocessing](#text-preprocessing)
-    - [Part of Speech Tagging](#part-of-speech-tagging)
-    - [Named Entity Recognition](#named-entity-recognition)
-    - [Text Classification](#text-classification)
-    - [Sentiment Analysis](#sentiment-analysis)
-    - [Language Modelling](#language-modelling)
-  - [Datasets to Work On](#datasets-to-work-on)
-  - [Other Resources](#other-resources)
-  - [Advanced Resources](#advanced-resources)
+## Quickstart 
+### NLP Session Hands-on
 
-## Pre-requisites
+- [Emoji Detection](https://colab.research.google.com/drive/1_-5IlUS5qOnJ-cuEuzOU8BpPSi8ggg16?usp=sharing): It is recommended to understand this notebook before moving into further concepts.
 
-- **Python**
-  - Notebooks From Tinkerers' Lab Tutorial
-    - [Basics of Python](https://colab.research.google.com/drive/1xxJ1qIWJ_5SecKFm3dm2yTIdbdMq-xtva)
-    - [Numpy](https://colab.research.google.com/drive/128UOdam4NvP-pCihfRCqDPJrvuwfRgR0)
-    - [Pandas](https://colab.research.google.com/drive/1bvIhERBGq5Mnx_bpsFOeicfleiJKeOpW)
-    - [Matplotlib](https://colab.research.google.com/drive/1OhF2anGzdWr5QhZgu__JvrOWQdblNFhp)
-    - [Seaborn](https://colab.research.google.com/drive/1OX-UZBRfyWB7rUIflBZxTY7xCNc2Yj5H)
-  - [Freecodecamp](https://www.youtube.com/watch?v=LHBE6Q9XlzI)
-- **Mathematics** - Suggested to have a good understanding of the following topics as it helps in every aspect of Machine Learning and Deep Learning
-  - Linear Algebra
-  - Probability and Statistics
-  - Calculus
-  - Suggested course: [Coursera - Mathematics for Machine Learning](https://www.coursera.org/specializations/mathematics-machine-learning)
-  - [Probability and Statistics](https://www.khanacademy.org/math/statistics-probability)
-  - [3Blue1Brown - Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
-- **Fundamentals of Machine Learning**
-  - Basic understanding of **supervised** and **unsupervised learning** and **evaluation metrics**
-  - Familiarity with libraries like `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`
-  - [Machine Learning By Andrew Ng](https://www.coursera.org/learn/machine-learning)
-  - [Machine learning YT](https://www.youtube.com/watch?v=i_LwzRVP7bg)
-- **Fundamentals of Deep Learning**
-  - Understanding of **neural networks**, **backpropagation**, **activation functions**, **optimizers**, **loss functions**
-  - Familiarity with libraries like (`tensorflow`, `keras`) or `pytorch`
-  - [Coursera - Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
-  - [Deep Learning Crash Course](https://www.youtube.com/watch?v=VyWAvY2CF9c)
+### Getting Started
+- [IMDB Review Classfication](https://colab.research.google.com/github/markwest1972/LSTM-Example-Google-Colaboratory/blob/master/LSTM_IMDB_Sentiment_Example.ipynb): This notebook will help you to understand some basics of sentiment analysis. 
 
-## NLP Roadmap
+**Note:** Don't worry even if you don't understand the above notebooks. try to grasp the high level idea of the implemented mechanism. Implementation and Libraries will be understood after covering some basic concepts.
 
-### Text Preprocessing
+## Text Preprocessing
+- Basic Libraries
+  - [NLTK](https://www.youtube.com/watch?v=FLZvOKSCkxY&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
+  - [Spacy](https://www.youtube.com/watch?v=dIUTsFT2MeQ)
+- Data Cleaning
+  - [Stemming and lemmatization](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html)
+  - [Stopwords and Punctuation removal](https://www.analyticsvidhya.com/blog/2022/01/text-cleaning-methods-in-nlp/)
+- Tokenization
+  - [Word and Sentence Tokenization](https://colab.research.google.com/drive/18ZnEnXKLQkkJoBXMZR2rspkWSm9EiDuZ)
+  - [Subword Tokenization](https://www.tensorflow.org/text/guide/subwords_tokenizer)
+  - [N-Grams](https://medium.com/@pankajchandravanshi/nlp-unlocked-n-grams-006-ceab1bc56bf4)
+- Word Embedding
+  - [Conceptual Understanding of Word Embedding](https://www.shanelynn.ie/get-busy-with-word-embeddings-introduction/) [Recommeded]
+  - [Basic Embedding Techniques](https://towardsdatascience.com/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795)
+  - [Glove](https://towardsdatascience.com/light-on-math-ml-intuitive-guide-to-understanding-glove-embeddings-b13b4f19c010)
+  - [Advance Embedding Techniques](https://colab.research.google.com/drive/1N7HELWImK9xCYheyozVP3C_McbiRo1nb)
+- Hands-on
+  - [Named Entity Recognisation using Spacy](https://colab.research.google.com/github/littlecolumns/ds4j-notebooks/blob/master/text-analysis/notebooks/Named%20Entity%20Recognition.ipynb)
+  - [Text Summarization](https://colab.research.google.com/github/dipanjanS/nlp_workshop_odsc19/blob/master/Module05%20-%20NLP%20Applications/Project06%20-%20Text%20Summarization.ipynb)
 
-- Techniques for cleaning and preparing text data
-- First step is to learn about techniques like **Tokenization**, **Lemmatization** , **Stemming** **Parts of Speech** , **Stopwords removal** and **Punctuation removal**
-- Second step is learning about **Bag of Words**, **Term Frequency-Inverse Document Frequency** , **Unigram, Bigram and Ngrams**
-- Finally we learn how to convert text data into numerical data using **Word Embeddings** like **Word2Vec**, **GloVe**, **FastText** and **BERT**
-- [Medium: Step1](https://medium.com/@maleeshadesilva21/preprocessing-steps-for-natural-language-processing-nlp-a-beginners-guide-d6d9bf7689c9)
-- [BoW, TF-IDF, N-grams](https://medium.com/analytics-vidhya/fundamentals-of-bag-of-words-and-tf-idf-9846d301ff22)
-- Selected Videos of [Deep Learning By codebasics](https://www.youtube.com/watch?v=Mubj_fqiAv8&list=PLeo1K3hjS3uu7CxAacxVndI4bE_o3BDtO)
 
-### Part of Speech Tagging
+## Basics of Pytorch and Tensorflow
+Both Pytorch and Tensorflow are powerful libraries which is used to implement Neural Models.
+- [Pytorch](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html): Follow this quickstart tutorial to get the basic understanding of pytorch.
+- [Tensorflow](https://www.tensorflow.org/tutorials/quickstart/beginner) Follow this quickstart tutorial to get the basic undertanding of tensorflow 
+  
+**Note:** After having basic understanding of both libraries, It is recommended that you create a deeper understanding of any one of them. 
+## Neural Models
 
-- Understanding the different parts of speech and how to tag them
-- [Freecodecamp Blogpost](https://www.freecodecamp.org/news/an-introduction-to-part-of-speech-tagging-and-the-hidden-markov-model-953d45338f24/)
-
-### Named Entity Recognition
-
-- Identifying and classifying named entities in text
-- [NER](https://www.youtube.com/watch?v=2XUhKpH0p4M)
-
-### Text Classification
-
-- Classifying text into different categories, for example spam detection as well as sentiment analysis
-
-### Sentiment Analysis
-
-- Understanding the sentiment of a given text
-
-### Language Modelling
-
-- A Language Model is a statistical model that is able to predict the next word in the sequence given the words that precede it
-- [Medium: Blog Post](https://medium.com/nlplanet/two-minutes-nlp-18-learning-resources-for-language-models-621c8680f8bb)
+- [Basics of RNN and LSTM](https://www.bouvet.no/bouvet-deler/explaining-recurrent-neural-networks): 
+  - This blog explains the high level overview of RNN and LSTM architecture 
+  - [IMDB Review Classfication](https://colab.research.google.com/github/markwest1972/LSTM-Example-Google-Colaboratory/blob/master/LSTM_IMDB_Sentiment_Example.ipynb) is used as an example.
+  - Hands on:
+    - [Text generation using Tensorflow](https://www.tensorflow.org/text/tutorials/text_generation)
+    - [POS tagger using PyTorch](https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html)
+  - Interesting Ideas
+    - [Fashion Mnist Classification using LSTM Network](https://www.kaggle.com/code/kmader/stacked-lstm-for-classification/notebook): Generally LSTM is used for text classification but we will use it for image classification in this notebook.
+## Interesting Concepts
+- **Information Retrieval**
+  - [Term-Based IR](https://medium.com/@prateekgaurav/mastering-information-retrieval-building-intelligent-search-systems-46403b316109): Read the first two chapters given in this blog to get the basics of the IR.
+  - Hands-on:
+    - [Basic IR Implementation](https://www.kaggle.com/code/vabatista/introduction-to-information-retrieval): Follow this notebook to get a good understanding of basic IR techniques.
+  - Videos:
+    - [Standford CS124 Week-3](https://www.youtube.com/watch?v=kNkCfaH2rxc&list=PLaZQkZp6WhWwoDuD6pQCmgVyDbUWl_ZUi): This video explain detail explanation of above concepts.
 
 ## Datasets to Work On
 
@@ -110,20 +89,24 @@
 - **Speech to Text**
   - [Kaggle - Speech to Text](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge)
 
+
 ## Other Resources
-
-- [NLTK](https://www.youtube.com/watch?v=FLZvOKSCkxY&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
-- [Spacy](https://www.youtube.com/watch?v=dIUTsFT2MeQ)
-- [Tensorflow](https://www.youtube.com/watch?v=tPYj3fFJGjk)
-- [Tensorflow for NLP](https://www.youtube.com/watch?v=B2q5cRJvqI8)
-- [Hugging Face](https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o)
-- [Kaggle](https://www.kaggle.com)
-- Some other roadmaps and list of resources:
-  - [NLP Roadmap](https://github.com/pemagrg1/Natural-Language-Processing-NLP-Roadmap)
-  - [Medium Roadmap](https://aqsazafar81.medium.com/natural-language-processing-roadmap-step-by-step-guide-5fbfcc61f9d9)
-  - [Medium Roadmap2](https://medium.com/aimonks/roadmap-to-learn-natural-language-processing-in-2023-6e3a9372b8cc)
-
-## Advanced Resources
-
-- [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/)
-- [Stanford - CS224N: Natural Language Processing with Deep Learning](https://www.youtube.com/watch?v=rmVRLeJRkl4&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4)
+- Kaggle Competitions 
+  - [Disaster Tweet](https://www.kaggle.com/competitions/nlp-getting-started/overview)
+  - [Contradictory, My Dear Watson](https://www.kaggle.com/code/alexia/kerasnlp-starter-notebook-contradictory-dearwatson)
+  - [TREC-COVID IR](https://www.kaggle.com/code/otvioalves/trec-covid-information-retrieval)
+- Readings
+  - [Transformer](http://jalammar.github.io/illustrated-transformer/)
+  - [POS Tagging using Advance Concept](https://www.freecodecamp.org/news/an-introduction-to-part-of-speech-tagging-and-the-hidden-markov-model-953d45338f24/)
+  - [Language Modelling](https://medium.com/nlplanet/two-minutes-nlp-18-learning-resources-for-language-models-621c8680f8bb)
+  
+- Videos
+  - [Stanford CS124](https://www.youtube.com/channel/UC_48v322owNVtORXuMeRmpA): You can follow his videos for deeper understanding.
+  - [Named Entity Recognisation](https://www.youtube.com/watch?v=2XUhKpH0p4M): Identifying and classifying named entities in text
+  - [Hugging Face](https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o): It provides large set of pre-trained models which can be used for multiple tasks
+  - [Stanford - CS224N: Natural Language Processing with Deep Learning](https://www.youtube.com/channel/UC_48v322owNVtORXuMeRmpA)
+- Books
+  - [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/)
+  - [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/pdf/irbookonlinereading.pdf)
+- Courses
+  - [NLP Specialization](https://www.coursera.org/specializations/natural-language-processing)
