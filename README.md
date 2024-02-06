@@ -50,6 +50,7 @@ Both Pytorch and Tensorflow are powerful libraries which is used to implement Ne
 ## Interesting Concepts
 - **Information Retrieval**
   - [Term-Based IR](https://medium.com/@prateekgaurav/mastering-information-retrieval-building-intelligent-search-systems-46403b316109): Read the first two chapters given in this blog to get the basics of the IR.
+  - [PyTerrier:](https://github.com/terrier-org/cikm2021tutorial) A library for Practical IR implementation.
   - Hands-on:
     - [Basic IR Implementation](https://www.kaggle.com/code/vabatista/introduction-to-information-retrieval): Follow this notebook to get a good understanding of basic IR techniques.
   - Videos:
